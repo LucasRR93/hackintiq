@@ -1,8 +1,8 @@
 # hackintiq
-Caneta sensível ao toque para tornar qualquer monitor em "touchscreen"
+Caneta sensível ao toque para transformar um monitor comum em "touchscreen".
 
 ## Resumo
-A ideia deste projeto veio a partir de uma busca por alternativas a Cintiq, mas que fosse ajustável a qualquer monitor. Existem poucas soluções no mercado, e muitas delas usam sensores infravermelho e ultrasom. A falta de acesso a esse produto me incentivou a começar esse projeto.
+A ideia deste projeto veio a partir de uma busca por alternativas a Cintiq, mas que fosse ajustável a qualquer monitor. Existem poucas soluções no mercado, e muitas delas usam sensores infravermelho e ultrassom. A falta de acesso a esse produto me incentivou a começar esse projeto.
 A solução pretendida é usar um conjunto de receptores de infravermelho para captar a luz emitida pelo LED, que estará em uma caneta adaptada.
 
 -------
@@ -10,12 +10,14 @@ A solução pretendida é usar um conjunto de receptores de infravermelho para c
 ### Lista de componentes
 * TIL32 - LED Emissor IR 5mm;
 * TIL78 - Fototransistor Infravermelho 5mm;
+* Arduino Uno;
+* Itens para prototipagem. Exp.: Protoboard e jumpers. 
 
 ### Arduino
-* Recebendo sinal IR pelo canal analógico;
+* [Sensor-IR](/Arduino/IR-receiver/): Recebendo sinal do TIL78 no arduino;
 
 ### Processing
-* Gráfico simples pra mostrar variações do sinal IR
+* [Gráfico pro sensor](/Processing/grafico_simples_arduino/): Gráfico simples pra mostrar variações do sinal IR;
 
 ### Bibliografia
 [Simple IR Proximity Sensor With Arduino](https://www.instructables.com/id/Simple-IR-proximity-sensor-with-Arduino/)
